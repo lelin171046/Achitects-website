@@ -1,5 +1,74 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,700;0,800;1,700&family=Open+Sans:wght@400;700;800&family=Playfair+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+/* share style  */
+.primary-btn{
+    
+}
+* {
     font-family: Work Sans;
+}
+
+/* header style  */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+
+    list-style: none;
+    padding-right: 30px;
+    font: size 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.nav-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.9rem;
+
+}
+
+/* banner tyle  */
+.banner-content {
+    text-align: center;
+    color: var(--Dark-01, #131313);
+    /* font-size: 4rem; */
+    font-weight: 800px;
+    margin: 0 auto;
+
+}
+
+.banner-title {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.banner-discription {
+    color: var(--Dark-03, #727272);
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    
 }
