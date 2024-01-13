@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,700;0,800;1,700&family=Open+Sans:wght@400;700;800&family=Playfair+Display&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* share style  */
-.primary-btn{
-    
+.primary-btn {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1.2rem;
+    /* width: 180px; */
+    padding: 20px 25px;
+    /* height: 64px; */
+    cursor: pointer;
+
 }
+
 * {
     font-family: Work Sans;
 }
@@ -15,8 +25,10 @@ header {
 }
 
 nav {
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -66,9 +78,40 @@ nav li a {
 
 .banner-discription {
     color: var(--Dark-03, #727272);
-    
+
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
+
+}
+.banner-section img{
+    width: 100%;
+    margin: 20px;
+}
+/* Responsive media  */
+/* MOblie device  */
+
+@media screen and (max-width:577px) {
+    header{
+        padding: 20px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
     
+}
+
+/* tablet  */
+@media screen and (min-width:578px) and (max-width:922px) {
+
+    header{
+        padding: 40px;
+
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+
 }
