@@ -17,6 +17,20 @@
     font-family: Work Sans;
 }
 
+.discription-color {
+    color: var(--Dark-03, #727272);
+}
+
+.section-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.9rem;
+
+}
+
+
+
+
 /* header style  */
 
 header {
@@ -51,12 +65,6 @@ nav li a {
     color: #424242;
 }
 
-.nav-title {
-    color: #131313;
-    font-weight: 700;
-    font-size: 2.9rem;
-
-}
 
 /* banner tyle  */
 .banner-content {
@@ -84,34 +92,143 @@ nav li a {
     font-weight: 400;
 
 }
-.banner-section img{
+
+.banner-section img {
     width: 100%;
     margin: 20px;
 }
+
+
+/* main style  */
+
+main {
+    max-width: 1440px;
+    padding: 50px 200px;
+    margin: 0 auto;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 20px;
+
+
+}
+
+.feature-list {
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.feature-head {
+    color: #727272;
+
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.feature-head .of-Our {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feature-head .Features {
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.feature-list .feature-description {
+
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* fact secrtion  */
+.fact-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact-card .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.fact-card .card-stats{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.fact-card .card-title{
+    font-size: 1.2rem;
+    font-weight: 599px;
+    margin-top: 5px;
+}
+
+
 /* Responsive media  */
-/* MOblie device  */
+/* MObile device  */
 
 @media screen and (max-width:577px) {
-    header{
+    header {
         padding: 20px;
 
     }
-    nav{
+
+    nav,
+    .feature-section {
         flex-direction: column;
-    }
-    
-}
-
-/* tablet  */
-@media screen and (min-width:578px) and (max-width:922px) {
-
-    header{
-        padding: 40px;
 
     }
-    nav{
-        flex-direction: column;
-    }
-    
 
-}
+    .feature-img {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-list {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    /* tablet  */
+    @media screen and (min-width:578px) and (max-width:922px) {
+
+        header {
+            padding: 40px;
+
+        }
+
+        nav {
+            flex-direction: column;
+        }
+
+        .feature-section {
+            flex-direction: column;
+        }
+
+
+
+    }
