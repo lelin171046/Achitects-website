@@ -172,7 +172,7 @@ main {
     padding: 30px;
 }
 
-.fact-card .card-stats{
+.fact-card .card-stats {
     font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
@@ -181,10 +181,93 @@ main {
 
 }
 
-.fact-card .card-title{
+.fact-card .card-title {
     font-size: 1.2rem;
     font-weight: 599px;
     margin-top: 5px;
+}
+
+/* feature style  */
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    gap: 90px;
+
+}
+
+.feature-item .feature-catagore {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.feature-ads-img .ten-year {
+    width: 320px;
+    height: 180px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    position: relative;
+    bottom: 120px;
+    right: 75px;
+    
+}
+
+.feature-ads-img img{
+    height: 90%;
+    padding-left: 50px;
+
+}
+
+.feature-ads-img h2{
+    margin: 0;
+    font-size: 4rem;
+}
+.feature-ads-img p{
+    font-size: 1.7;
+}
+
+
+
+.feature-item .tagline {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+    color: var(--Dark-01, #131313);
+    font-size: 3rem;
+}
+
+
+/* sporsor style  */
+
+.spomsors-section .section-title {
+    text-align: center;
+}
+
+.sponsor-img {
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 20px;
+
+
+}
+
+
+
+/* footer style  */
+
+footer {
+    text-align: center;
+    padding-top: 5px;
+    height: 50px;
+    background-color: #FFF4E7;
 }
 
 
@@ -198,19 +281,34 @@ main {
     }
 
     nav,
-    .feature-section {
+    .feature-section,
+    .fact-card,
+    .sponsor-img, .feature-item{
         flex-direction: column;
+    }
 
+    .feature-ads-img img{
+        width: 90%;
+        margin-left: 0;
     }
 
     .feature-img {
         grid-template-columns: 1fr;
     }
 
-    .feature-list {
+    .feature-list,
+    .fact-card {
         padding-left: 20px;
         padding-right: 20px;
 
+    }
+    .feature-ads-img .ten-year{
+        position: static;
+        max-width: 250px;
+    }
+
+    .fact-card {
+        gap: 20px;
     }
 
     /* tablet  */
@@ -221,12 +319,17 @@ main {
 
         }
 
-        nav {
+        nav .sponsor-img {
             flex-direction: column;
         }
 
         .feature-section {
             flex-direction: column;
+        }
+
+        .fact-card {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
         }
 
 
